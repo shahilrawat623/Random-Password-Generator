@@ -15,8 +15,8 @@ A simple, lightweight web app that generates strong, customizable random passwor
 ---
 
 ## 📂 Project Structure
-index.html   → Main HTML file (UI layout)
-style.css    → Styling for the app (colors, fonts, responsiveness)
+index.html   → Main HTML file (UI layout)<br>
+style.css    → Styling for the app (colors, fonts, responsiveness)<br>
 script.js    → JavaScript logic for password generation
 
 ## 🧰 Technologies Used
