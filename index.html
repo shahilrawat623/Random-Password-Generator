@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random PAssword Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="box-container">
@@ -13,14 +15,15 @@
         </div>
 
         <div id="input-container">
-            <input type="text" placeholder="Create Password" readonly>
+            <input type="text" id="input" placeholder="Create Password" readonly>
+            <i class="fa-regular fa-copy fa-2x"></i>
         </div>
 
         <div>
             <button>Generate</button>
         </div>
 
-        <div id="alert-container">
+        <div class="alert-container ">
             <p id="alert-msg">Password Generated</p>
         </div>
     
