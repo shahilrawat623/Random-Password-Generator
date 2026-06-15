@@ -1,0 +1,156 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+}
+
+/* container */
+
+#box-container{
+    background-color: pink;
+    padding: 2vmin;
+    /* width: 30%;
+    min-height: 20vh; */
+    border-radius: .5rem;
+}
+
+/* input */
+
+#input-container{
+    
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem;
+    border-radius: .4rem;
+    
+}
+
+#input{
+    width: 70%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+#input::placeholder{
+    letter-spacing: 0px;
+}
+
+.fa-copy{
+    opacity: .5;
+}
+
+.fa-copy:hover{
+    opacity: .9;
+}
+
+.fa-copy:active{
+    transform: scale(.9);
+}
+
+/* button */
+
+button{
+    margin-top: .5rem;
+    padding: 2vmin 3vmin ;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: .2rem;
+}
+
+button:hover{
+    transform: scale(1.04);
+}
+
+button:active{
+    background-color: green;
+    transform: scale(.99);
+
+}
+
+/* alert-container */
+
+.alert-container{
+    background-color: lightgreen;
+    height: 15vmin;
+    width: 40vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    border-radius: .4rem;
+}
+
+.active{
+    display: none;
+}
+
+/* //RESPONSIVE FOR ALL DEVICES */
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) { 
+    #box-container{
+        width: 90%;
+        min-height: fit-content;
+    }
+    .alert-container{
+        width: 200px;
+        height: max-content;
+    }
+}
+ 
+/* Tablet (481px–768px) */
+ @media (min-width: 481px) and (max-width: 768px) { 
+    #box-container{
+        width: 60%;
+        min-height: fit-content;
+    }
+    .alert-container{
+        width: 40vmin;
+        height: max-content;
+    }
+}
+
+/* Small Laptop (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) { 
+    #box-container{
+        width: 60%;
+        min-height: fit-content;
+    }
+    .alert-container{
+        width: 40vmin;
+        height: max-content;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    #box-container{
+        width: 40%;
+        min-height: fit-content;
+    }
+    .alert-container{
+        width: 30vmin;
+        height: max-content;
+    }
+} 
+
+
+
+
+
