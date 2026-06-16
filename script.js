@@ -1,6 +1,11 @@
 let btn = document.querySelector("#button");
 let input = document.querySelector("#input");
-let alertEl = document.querySelector("#alert-msg")
+let alertEl = document.querySelector("#alert-msg");
+let copyIcon = document.querySelector(".fa-copy");
+
+copyIcon.addEventListener("click",()=>{
+    copyPassword();
+})
 
 btn.addEventListener("click",()=>{
     generatePass();
@@ -17,6 +22,12 @@ const generatePass = () => {
     }
     input.value=password;
     alertEl.innerText= " Coppied " + password;
+}
+
+const copyPassword = () =>{
+    input.select();
+    input.setSelectionRange(0,14);
+    navigator.clipboard.writeText(input.value)
 }
 
 
