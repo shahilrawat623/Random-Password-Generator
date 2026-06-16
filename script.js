@@ -1,10 +1,19 @@
 let btn = document.querySelector("#button");
 let input = document.querySelector("#input");
 let alertEl = document.querySelector("#alert-msg");
+let alertBox = document.querySelector(".alert-container")
 let copyIcon = document.querySelector(".fa-copy");
 
 copyIcon.addEventListener("click",()=>{
     copyPassword();
+
+    if(input.value){
+        alertBox.classList.remove("active");
+    setTimeout(()=>{
+        alertBox.classList.add("active")
+    },2000)
+    }
+    
 })
 
 btn.addEventListener("click",()=>{
@@ -18,7 +27,7 @@ const generatePass = () => {
     for(let i=0;i<passwordlen;i++){
         let randomNum= Math.floor(Math.random() * char.length) ;
         password += char.substring(randomNum,randomNum+1)
-        console.log(password);
+        // console.log(password);
     }
     input.value=password;
     alertEl.innerText= " Coppied " + password;
