@@ -28,3 +28,15 @@ script.js    → JavaScript logic for password generation
 - Add password strength meter
 - Dark mode support
 - Save generated passwords
+
+## 🛠️ Installation & Usage
+To view this project on your local device:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/shahilrawat623/Random-Password-Generator.git
+
+## 🤝 Contributing
+Contributions are welcome! Please fork the repo and submit a pull request.
+
+
