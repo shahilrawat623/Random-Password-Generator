@@ -1,4 +1,6 @@
 let btn = document.querySelector("#button");
+let input = document.querySelector("#input");
+let alertEl = document.querySelector("#alert-msg")
 
 btn.addEventListener("click",()=>{
     generatePass();
@@ -11,6 +13,11 @@ const generatePass = () => {
     for(let i=0;i<passwordlen;i++){
         let randomNum= Math.floor(Math.random() * char.length) ;
         password += char.substring(randomNum,randomNum+1)
-        // console.log(password);
+        console.log(password);
     }
+    input.value=password;
+    alertEl.innerText= " Coppied " + password;
 }
+
+
+
